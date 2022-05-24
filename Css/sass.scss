@@ -1,3 +1,59 @@
+@mixin center-div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
 body{
+    @include center-div;
     font-family: 'Nunito', sans-serif;
+    background-color: #07401B;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Main container */
+
+#main-container{
+    @include center-div;
+    
+    max-width: 60rem;
+    min-height: 95vh;
+
+    #grid{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Title */
+
+#title{
+    @include center-div;
+    margin-bottom: 10vh;
+    h1{
+        text-align: center;
+        font-size: 10rem;
+        font-weight: bold;
+        color: #D99923;
+        margin: 0rem;
+    }
+}
+
+/* Dices */
+
+#dice-1, #dice-2{
+    @include center-div;
+    flex-direction: column;
+
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        color: aliceblue;
+        margin-bottom: 10%;
+    }
+
+    img{
+        width: 100%;
+    }
 }
