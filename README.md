@@ -2,7 +2,7 @@
 
 <p align="center">
   <h3>
-  Link : https:/random-dice-woad.vercel.app
+  Link : https://random-dice-woad.vercel.app
   </h3>
 </p>
 
